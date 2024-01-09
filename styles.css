@@ -89,7 +89,10 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
@@ -333,8 +336,9 @@ header {
   }
 }
 /* sections and title */
-.title h2{
-  margin-top: 2rem;
+.main-title h2 {
+  font-size: 3rem;
+  padding-top: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -390,7 +394,7 @@ h4 {
   padding-left: 1rem;
 }
 .underline {
-  height: 0.10rem;
+  height: 0.1rem;
   background: var(--clr-primary-5);
   width: 100%;
 }
@@ -403,24 +407,30 @@ h4 {
   }
 }
 
+/* why */
 
+.icon-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
 
+.icon-container {
+  color: var(--clr-secondary);
+  background: var(--clr-grey-10);
+  border-radius: 0.5rem;
+  padding: 0;
+  height: 100%;
+}
 
+.icon-heading {
+  font-size: 1.3rem;
+  color: var(--clr-grey-2);
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.title span {
+.main-title span {
   color: var(--clr-secondary);
 }
 
@@ -435,6 +445,8 @@ h4 {
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
+  color: var(--clr-white);
+  text-align: center;
 }
 footer p {
   color: var(--clr-white);
@@ -442,6 +454,9 @@ footer p {
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   margin-bottom: 0;
+}
+footer h2 {
+
 }
 
 .top-link {
