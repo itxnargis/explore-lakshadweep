@@ -89,14 +89,11 @@ img {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  /* margin-bottom: 0.75rem; */
   font-family: var(--ff-primary);
 }
 h1 {
@@ -141,6 +138,7 @@ p {
 /*  global classes */
 
 .btn {
+  margin-top: 2rem;
   text-transform: uppercase;
   background: transparent;
   color: var(--clr-black);
@@ -159,14 +157,15 @@ p {
   background: var(--clr-black);
 }
 .btn-white {
-  color: var(--clr-white);
   border-color: var(--clr-white);
   border-radius: 0;
   padding: 0.5rem 1rem;
+  background: var(--clr-black);
+  color: var(--clr-white);
 }
 .btn:hover {
-  background: var(--clr-white);
-  color: var(--clr-secondary);
+  color: var(--clr-grey-2);
+  background: var(--clr-grey-7);
 }
 /* section */
 .section {
@@ -312,6 +311,14 @@ header {
 .container h1 {
   color: var(--clr-white);
   text-transform: uppercase;
+  font-size: 5rem;
+}
+
+.container h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-grey-8);
 }
 .container p {
   color: var(--clr-white);
