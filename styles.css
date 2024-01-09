@@ -336,12 +336,17 @@ header {
 }
 
 /* explore section  */
+
+.main-container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 5rem;
 }
 .img-container {
   border: 3px solid var(--clr-grey-8);
@@ -380,6 +385,11 @@ h4 {
   height: 0.10rem;
   background: var(--clr-primary-5);
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .main-container {
+    width: 85%;
+  }
 }
 
 
