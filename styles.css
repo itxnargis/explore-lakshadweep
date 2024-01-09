@@ -308,6 +308,7 @@ header {
   place-items: center;
   text-align: center;
 }
+
 .container h1 {
   color: var(--clr-white);
   text-transform: uppercase;
@@ -396,6 +397,9 @@ h4 {
 @media screen and (max-width: 767px) {
   .main-container {
     width: 85%;
+  }
+  .container h1 {
+    font-size: 3rem;
   }
 }
 
