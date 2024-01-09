@@ -46,7 +46,7 @@ Variables
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
+  --transition: all 0.9s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -329,6 +329,7 @@ header {
   max-width: 25rem;
   margin: 0 auto;
   margin-bottom: 1.25rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .container p {
@@ -383,6 +384,7 @@ header {
 .img-heading {
   font-size: 2rem;
   color: var(--clr-grey-2);
+  margin-bottom: 0.3rem;
 }
 h4 {
   color: var(--clr-grey-2);
@@ -392,6 +394,7 @@ h4 {
 }
 .title {
   padding-left: 1rem;
+  margin-bottom: 0.2rem;
 }
 .underline {
   height: 0.1rem;
@@ -434,6 +437,87 @@ h4 {
   color: var(--clr-secondary);
 }
 
+.icon-design {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.info {
+  font-size: 1.3rem;
+  word-spacing: 0.8rem;
+}
+
+.info a {
+  color: var(--clr-white);
+  text-decoration: none;
+}
+
+.info a i:hover {
+  color: #ff3f80;
+  -webkit-transform: scale(1.1) translateY(-5px) rotate(360deg);
+  transform: scale(1.1) translateY(-5px) rotate(360deg);
+}
+
+.main-question {
+  background: var(--clr-white);
+  margin: 1rem;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.section-center {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: var(--spacing);
+  color: var(--clr-black);
+  font-weight: 600;
+}
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: var(--transition);
+}
+.question-btn:hover {
+  transition: var(--transition);
+}
+
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.question-text p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+/* hide text */
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.up-icon {
+  display: none;
+}
+.show-text .up-icon {
+  display: inline;
+}
+.show-text .down-icon {
+  display: none;
+}
+
 /* #services,
 #tours,
 #contact {
@@ -456,7 +540,6 @@ footer p {
   margin-bottom: 0;
 }
 footer h2 {
-
 }
 
 .top-link {
