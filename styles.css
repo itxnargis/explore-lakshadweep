@@ -1,12 +1,12 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -55,7 +55,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -112,7 +112,7 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
@@ -189,7 +189,7 @@ main {
   place-items: center;
 }
 /*
-=============== 
+===============
 Scroll
 ===============
 */
@@ -301,7 +301,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./hero-bcg.jpeg) center/cover no-repeat;
+    url(i.webp) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
@@ -325,18 +325,89 @@ header {
   }
 }
 /* sections and title */
-.title h2 {
+.title h2{
+  margin-top: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
+.sub-para {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* explore section  */
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.img-container {
+  border: 3px solid var(--clr-grey-8);
+  color: var(--clr-secondary);
+  border-radius: 0.5rem;
+  padding: 0;
+  height: 100%;
+}
+.img-container img {
+  border-radius: 0.3em;
+  margin-bottom: 1rem;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.sub-heading {
+  padding: 1rem;
+  padding-top: 0.5rem;
+}
+.img-heading {
+  font-size: 2rem;
+  color: var(--clr-grey-2);
+}
+h4 {
+  color: var(--clr-grey-2);
+}
+.img-para {
+  color: var(--clr-grey-2);
+}
+.title {
+  padding-left: 1rem;
+}
+.underline {
+  height: 0.10rem;
+  background: var(--clr-primary-5);
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .title span {
   color: var(--clr-secondary);
 }
-#about,
-#services,
-#tours {
-  height: 80vh;
-}
+
+/* #services,
+#tours,
+#contact {
+  height: 100vh;
+} */
 #services {
   background: var(--clr-white);
 }
