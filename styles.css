@@ -339,13 +339,16 @@ header {
 /* sections and title */
 .main-title h2 {
   font-size: 3rem;
-  padding-top: 2rem;
+  padding-top: 5rem;
   text-align: center;
   text-transform: uppercase;
 }
 .sub-para {
+  margin-bottom: 5rem;
   text-align: center;
   font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* explore section  */
@@ -408,6 +411,9 @@ h4 {
   .container h1 {
     font-size: 3rem;
   }
+  .main-title h2 {
+    font-size: 2rem;
+  }
 }
 
 /* why */
@@ -444,14 +450,28 @@ h4 {
 
 .info {
   font-size: 1.3rem;
-  word-spacing: 0.8rem;
 }
 
 .info a {
-  color: var(--clr-white);
+  color: var(--clr-secondary);
   text-decoration: none;
 }
 
+.info a i {
+  font-size: 1rem;
+  width: 25px;
+  height: 25px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  border-radius: 50%;
+  background: white;
+  color: var(--clr-primary-3);
+  transition: transform 0.5s ease;
+}
 .info a i:hover {
   color: #ff3f80;
   -webkit-transform: scale(1.1) translateY(-5px) rotate(360deg);
@@ -479,6 +499,9 @@ h4 {
   margin-bottom: 0;
   letter-spacing: var(--spacing);
   color: var(--clr-black);
+  font-weight: 600;
+}
+.question-text p span {
   font-weight: 600;
 }
 .question-btn {
@@ -517,13 +540,7 @@ h4 {
 .show-text .down-icon {
   display: none;
 }
-
-/* #services,
-#tours,
-#contact {
-  height: 100vh;
-} */
-#services {
+#about {
   background: var(--clr-white);
 }
 footer {
@@ -539,9 +556,20 @@ footer p {
   letter-spacing: var(--spacing);
   margin-bottom: 0;
 }
-footer h2 {
+.description i {
+  color: #ff3f80;
+  font-size: 1rem;
 }
-
+.description-banner {
+  color: var(--clr-grey-6);
+}
+.description span {
+  font-size: 1.3rem;
+  color: var(--clr-secondary);
+}
+.info p {
+  font-size: 1rem;
+}
 .top-link {
   font-size: 1.25rem;
   position: fixed;
@@ -555,23 +583,10 @@ footer h2 {
   border-radius: var(--radius);
   color: var(--clr-white);
   animation: bounce 2s ease-in-out infinite;
-
   visibility: hidden;
   z-index: -100;
 }
 .show-link {
   visibility: visible;
   z-index: 100;
-}
-
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
