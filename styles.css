@@ -331,6 +331,21 @@ header {
   margin-bottom: 1.25rem;
   font-size: 1.5rem;
 }
+
+.share-btn {
+  border: transparent;
+  background: transparent;
+  color: var(--clr-white);
+}
+
+.share-icon {
+  padding: 1rem;
+}
+
+.share-btn i {
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;
