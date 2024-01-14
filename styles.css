@@ -575,7 +575,7 @@ footer p {
   font-size: 1.25rem;
   position: fixed;
   bottom: 3rem;
-  right: 3rem;
+  right: 6rem;
   background: var(--clr-secondary);
   width: 2rem;
   height: 2rem;
@@ -600,7 +600,7 @@ footer p {
   height: 2rem;
   border-radius: var(--radius);
   bottom: 3rem;
-  right: 6rem;
+  right: 2rem;
   position: fixed;
   cursor: pointer;
 }
