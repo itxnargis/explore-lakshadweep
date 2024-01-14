@@ -616,3 +616,7 @@ footer p {
   animation: bounce 2s ease-in-out infinite;
   z-index: -100;
 }
+
+.fa-share-alt {
+  margin-right: 0.3rem;
+}
