@@ -332,20 +332,6 @@ header {
   font-size: 1.5rem;
 }
 
-.share-btn {
-  border: transparent;
-  background: transparent;
-  color: var(--clr-white);
-}
-
-.share-icon {
-  padding: 1rem;
-}
-
-.share-btn i {
-  font-size: 1.2rem;
-}
-
 @media screen and (min-width: 768px) {
   .container p {
     max-width: 40rem;
@@ -604,4 +590,26 @@ footer p {
 .show-link {
   visibility: visible;
   z-index: 100;
+}
+
+.share-btn {
+  border: transparent;
+  background: var(--clr-secondary);
+  color: var(--clr-white);
+  width: 3rem;
+  height: 2rem;
+  border-radius: var(--radius);
+  bottom: 3rem;
+  right: 6rem;
+  position: fixed;
+  cursor: pointer;
+}
+
+.share-icon {
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+  /* animation: bounce 2s ease-in-out infinite; */
+  visibility: hidden;
+  z-index: -100;
 }
